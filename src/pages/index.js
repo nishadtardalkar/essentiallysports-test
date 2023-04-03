@@ -20,7 +20,7 @@ export default function Home(props) {
 	return <div className={styles.container}>
 		<div className={styles.header}>
 			<a href="https://www.essentiallysports.com">
-				<img className={styles.logo} src="https://image-cdn.essentiallysports.com/wp-content/uploads/es_horizontal-1.png" />
+				<img className={styles.logo} src="https://image-cdn.essentiallysports.com/wp-content/uploads/es_horizontal-1.png" alt="" />
 			</a>
 		</div>
 		<div className={styles.body}>

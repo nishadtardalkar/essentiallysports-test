@@ -1,7 +1,7 @@
 import styles from './css/NewsItemCard.module.css'
 import { useEffect, useRef, useState } from 'react';
 
-export default function(props) {
+export default function NewsItemCard(props) {
 
 	const item = props.item;
 	const date = item['pubDate'].split(" ").slice(1, 4).join(" ");
@@ -30,7 +30,7 @@ export default function(props) {
 			}
 		});
 		observer.observe(contentRef.current.children[0]);
-	});
+	}, []);
 
 	return <div className={styles.container}>
 		<div className={styles.card}>
