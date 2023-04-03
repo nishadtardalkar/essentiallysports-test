@@ -6,7 +6,7 @@ import { XMLParser } from 'fast-xml-parser';
 
 export async function getServerSideProps(context) {
 
-	var res = await fetch('http://localhost:3000/api/proxy');
+	var res = await fetch('https://essentiallysports-test.vercel.app:3000/api/proxy');
 	var feed = await res.text();
 
 	return {props: {feed: feed}};
